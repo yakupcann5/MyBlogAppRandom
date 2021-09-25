@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidAssigment</string>
+    <string name="hello_first_fragment">Android Assigment Hoşgeldiniz</string>
+    <string name="ileri_buton">İleri</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
