@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">AndroidAssigment</string>
+    <string name="app_name">Android Assigment</string>
     <string name="hello_first_fragment">Android Assigment Hoşgeldiniz</string>
     <string name="ileri_buton">İleri</string>
-
+    <string name="home_ekranı">Home Ekranı</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_mesaj">Profil ve ToDo ekranları için Aşağıdaki Sekmeleri Kullanın.</string>
 </resources>
