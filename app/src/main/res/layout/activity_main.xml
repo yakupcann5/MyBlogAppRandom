@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activty.MainActivity">
 
     <TextView
         android:id="@+id/textview_first"
@@ -20,7 +20,7 @@
         android:id="@+id/button_button_sayfa_bir"
         android:layout_width="106dp"
         android:layout_height="49dp"
-        android:text="@string/ileri_buton"
+        android:text="@string/next_buton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

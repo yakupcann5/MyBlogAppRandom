@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activty.MainActivity">
 
     <TextView
         android:id="@+id/thirdFragment"
@@ -20,5 +20,47 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/TextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="248dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="267dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="14dp"></View>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

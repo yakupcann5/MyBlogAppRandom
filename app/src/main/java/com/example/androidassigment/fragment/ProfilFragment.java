@@ -12,12 +12,9 @@ import com.example.androidassigment.R;
 
 public class ProfilFragment extends Fragment {
     public ProfilFragment(){
-        // require a empty public constructor
+
     }
-
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         return inflater.inflate(R.layout.fragment_profil, container, false);
     }
 }
