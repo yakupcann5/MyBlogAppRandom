@@ -5,10 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.androidassigment.R;
 import com.example.androidassigment.model.Post;
 import java.util.ArrayList;
@@ -17,7 +15,7 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
     ArrayList<Post> post;
     Context context;
 
-    public ToDoFragmentAdapter(ArrayList<Post>post, Context context){
+    public ToDoFragmentAdapter(ArrayList<Post> post, Context context){
         this.post=post;
         this.context=context;
     }
@@ -29,19 +27,20 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
     }
     @Override
     public void onBindViewHolder(@NonNull ToDoFragmentAdapter.ViewHolder holder, int position) {
-        holder.textViewId.setText(post.get(position).getId());
+        holder.textViewId.setText(Integer.toString(post.get(position).getId()));
         holder.textViewTitle.setText(post.get(position).getTitle());
     }
     @Override
     public int getItemCount() {
-        return post.size();
+       return post.size();
     }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView textViewId;
         TextView textViewTitle;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewId = itemView.findViewById(R.id.TextViewId);
+            textViewId = itemView.findViewById(R.id.textViewId);
             textViewTitle = itemView.findViewById(R.id.TextViewTitle);
         }
     }

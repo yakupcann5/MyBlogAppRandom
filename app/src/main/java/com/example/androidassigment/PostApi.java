@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 
 public interface PostApi {
     //https://jsonplaceholder.typicode.com/todos
-    @GET("todos")
-    Call<List<Post>> GetPost ();
+    @GET("/todos")
+    Call<List<Post>> getPost();
 
 }
