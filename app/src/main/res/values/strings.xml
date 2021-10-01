@@ -7,5 +7,6 @@
     <string name="home_text">Profil ve ToDo ekranları için Aşağıdaki Sekmeleri Kullanın.</string>
     <string name="title">title</string>
     <string name="id">id</string>
+    <string name="completed">completed</string>
 
 </resources>

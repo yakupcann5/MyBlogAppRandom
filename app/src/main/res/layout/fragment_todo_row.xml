@@ -12,14 +12,21 @@
         android:layout_height="wrap_content"
         android:text="@string/id"
         android:textColor="#000">
-
     </TextView>
 
     <TextView
-        android:id="@+id/TextViewTitle"
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewComplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/completed"
         android:textColor="#000">
 
     </TextView>
