@@ -22,7 +22,7 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
     @NonNull
     @Override
     public ToDoFragmentAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_todo, parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_todo_row, parent,false);
         return new ViewHolder(view);
     }
     @Override
