@@ -2,10 +2,8 @@ package com.example.androidassigment.activty;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.androidassigment.R;
 import com.example.androidassigment.fragment.HomeFragment;
 import com.example.androidassigment.fragment.ProfilFragment;

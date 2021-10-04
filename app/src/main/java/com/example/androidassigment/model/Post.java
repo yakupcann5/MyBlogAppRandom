@@ -4,7 +4,7 @@ public class Post {
     private int userId;
     private int id;
     private String title;
-    private String complate;
+    private boolean complate;
 
     public String getTitle() {
         return title;
@@ -24,10 +24,10 @@ public class Post {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-    public String getComplate() {
+    public boolean getComplate() {
         return complate;
     }
-    public void setComplate(String complate) {
+    public void setComplate(boolean complate) {
         this.complate = complate;
     }
 }
