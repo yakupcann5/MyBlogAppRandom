@@ -12,6 +12,7 @@ import com.example.androidassigment.model.Post;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapter.ViewHolder> {
     ArrayList<Post> post;
@@ -32,11 +33,12 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
     public void onBindViewHolder(@NonNull ToDoFragmentAdapter.ViewHolder holder, int position) {
         holder.textViewId.setText(Integer.toString(post.get(position).getId()));
         holder.textViewTitle.setText(post.get(position).getTitle());
-        holder.textViewCompleted.setText(post.get(position).getComplate());
+        Random rand = new Random();
+        holder.textViewCompleted.setText(String.valueOf(rand.nextBoolean()));//post.get(position).getComplate());
         holder.textViewId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view , "Completed "+textViewCompleted, Snackbar.LENGTH_SHORT)
+                Snackbar.make(view , "Completed "+holder.textViewCompleted.getText(), Snackbar.LENGTH_SHORT)
                         .setAction("Action" , null)
                         .show();
             }

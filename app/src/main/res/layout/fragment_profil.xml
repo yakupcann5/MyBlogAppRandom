@@ -7,36 +7,131 @@
     android:layout_height="match_parent"
     tools:context=".activty.MainActivity">
 
-    <TextView
-        android:id="@+id/secondFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profil Ekranı"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+<!--    <TextView-->
+<!--        android:id="@+id/secondFragment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Profil Ekranı"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textStyle="italic|bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.172" />-->
 
     <Button
         android:id="@+id/buttonProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="518dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textViewProfil"
-        android:layout_width="413dp"
-        android:layout_height="41dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="366dp" />
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        tools:layout_editor_absoluteX="4dp">
+
+        <LinearLayout
+            android:layout_width="66dp"
+            android:layout_height="92dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İsim"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/sname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soy İsim"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="URL "
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="338dp"
+            android:layout_height="92dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fnameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İsim"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/snameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soy İsim"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/emailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/urlView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotoğraf Url"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="316dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
