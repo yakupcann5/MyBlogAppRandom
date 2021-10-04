@@ -17,8 +17,6 @@ import com.example.androidassigment.adapters.ToDoFragmentAdapter;
 import com.example.androidassigment.model.Post;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -37,7 +35,6 @@ public class ToDoFragment extends Fragment {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
-
     public void getPost() {
         PostApi postApi = retrofit.create(PostApi.class);
         Call<List<Post>> call = postApi.getPost();
@@ -53,7 +50,6 @@ public class ToDoFragment extends Fragment {
             }
         });
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -62,7 +58,6 @@ public class ToDoFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         getPost();
     }
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_todo, container, false);
     }

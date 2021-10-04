@@ -10,15 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.androidassigment.R;
 import com.example.androidassigment.model.Post;
 import com.google.android.material.snackbar.Snackbar;
-
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapter.ViewHolder> {
     ArrayList<Post> post;
     Context context;
-    public String textViewCompleted  ;
 
+    public String textViewCompleted  ;
     public ToDoFragmentAdapter(ArrayList<Post> post, Context context){
         this.post=post;
         this.context=context;
@@ -48,7 +47,6 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
     public int getItemCount() {
        return post.size();
     }
-
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView textViewId;
         TextView textViewTitle;
@@ -60,5 +58,4 @@ public class ToDoFragmentAdapter extends RecyclerView.Adapter<ToDoFragmentAdapte
             textViewCompleted = itemView.findViewById(R.id.textViewComplate);
         }
     }
-
 }
